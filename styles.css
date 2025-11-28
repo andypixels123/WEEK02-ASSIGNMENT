@@ -1,19 +1,82 @@
-#thumbnail-container {
+/* Requirements
 
+    🎯 Implement responsive design methods to ensure the website works well on both small mobile screens and larger desktop screens (e.g., above 800px).
+    🎯 Implement at least one meaningful media query so that there is a noticeable change between mobile and desktop view (an example is to change where the ‘thumbnail bar’ is positioned).
+    🎯 Ensure all images have appropriate alt text attributes for accessibility.
+    🎯 Correctly use event handlers to switch images based on user interactions. */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1;
+}
+
+body {
+    background-color: #333;
+}
+
+main {
+    display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: 1fr 1fr 1fr;
+/* position: relative; */
+    padding: 8% 0;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+
+.ri {
+    /* responsive image */
+    width: 100%;
+    height: auto;
+}
+
+#thumbnail-container {
+/* position: absolute; */
+    /* left: 0; */
+    /* right: 0; */
+    /* bottom: 0; */
+grid-column-start: 1;
+grid-column-end: -1;
+/* object-position: top center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+#thumbnail-container img {
+    max-width: 80px;
+    cursor: pointer;
 }
 
 #fullscreen-container {
-
+grid-row-start: 1;
+grid-row-end: 4;
+    /* width: 100%; */
+    /* margin: 0 0 15px 0 */
 }
 
-#img-one {
-
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: dodgerblue;
+    border-radius: 50%;
+opacity: 0.2;
 }
 
-#img-two {
+#nextBtn {}
 
-}
+#img-one {}
 
-#img-three {
+#img-two {}
 
-}
+#img-three {}

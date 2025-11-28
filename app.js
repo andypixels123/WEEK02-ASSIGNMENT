@@ -29,6 +29,8 @@ function createThumbnails() {
         img.src = imageData[i].imageSrc;
         img.alt = imageData[i].imageAlt;
         img.id = imageData[i].imageName;
+        img.className = "ri";
+        img.title = imageData[i].imageAlt;
         img.addEventListener("click", createFullscreenImage);
         thumbContainer.appendChild(img);
     }
@@ -40,9 +42,12 @@ function createThumbnails() {
         fullScreenContainer.innerHTML = ""; // remove image
         //create image
         //update its values (properties)
-        //add className for styling (making the image full screen)
+        //add className for styling (making the image full screen) 
+        const img = document.createElement("img");
+        img.src = imageData.imageSrc;
+        img.alt = imageData.imageAlt;
         //append the image to the container
-        fullScreenContainer.appendChild(img);
+        // fullScreenContainer.appendChild(img);
     }
 
 //add the createFullscreenImages function as the event handler of the event above
