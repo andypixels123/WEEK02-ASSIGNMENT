@@ -22,8 +22,10 @@ main {
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     padding: 8% 2%;
     width: 100%;
-    /* max-width: 800px; *//* limit width */
-    /* margin: auto; *//* center element on limited width */
+    /* limit width */
+    /* max-width: 800px; */
+    /* center element on limited width */
+    /* margin: auto; */
 }
 
 .ri {
@@ -76,7 +78,7 @@ img {
     border-radius: 50%;
     border: 4px solid lime;
     opacity: 0.3;
-	transition: all 0.3s ease;
+    transition: all 0.5s ease;
 }
 
 .btn:hover {
@@ -94,10 +96,26 @@ img {
     padding: 20px;
 }
 
+/* @keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+#fullscreen-container img {
+    animation-name: fadeIn;
+    animation-duration: 1s;
+} */
+
 @media only screen and (max-width: 800px) {
     main {
-        display: block;        
+        display: block;
     }
+
     #fullscreen-container {
         margin-bottom: 15px;
     }

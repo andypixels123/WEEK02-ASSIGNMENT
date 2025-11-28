@@ -1,5 +1,10 @@
 //TODO: Create thumbnail images, so the user can click on them and see them in a fullscreen format
 
+const prevBtn = document.getElementById("prevBtn");
+const nextBtn = document.getElementById("nextBtn");
+const fullScreenContainer = document.getElementById("fullscreen-container");
+const thumbContainer = document.getElementById("thumbnail-container");
+
 //STEP 1: store image data
 const imageData = [
     {
@@ -18,9 +23,6 @@ const imageData = [
         imageAlt: "alt text",
     },
 ];
-
-const fullScreenContainer = document.getElementById("fullscreen-container");
-const thumbContainer = document.getElementById("thumbnail-container");
 
 //STEP 2: create thumbnail images
 function createThumbnails() {
