@@ -47,7 +47,20 @@ function createThumbnails() {
         fullImg.alt = imageData[selected].imageAlt;
         fullImg.className = "ri";
         fullScreenContainer.appendChild(fullImg);
+        adVance(selected);
+    }
+
+    function adVance(x) {
+        let prev = x - 1;
+        // console.log(prev);
+        if(prev < 0) { prev = imageData.length; }
+        let next = x + 1;
+        if(next > (imageData.length - 1)) { next = 0; }
+        prevBtn.removeEventListener("click", createFullscreenImage);
+        nextBtn.removeEventListener("click", createFullscreenImage);
+        prevBtn.addEventListener("click", () => { createFullscreenImage(prev); });
+        nextBtn.addEventListener("click", () => { createFullscreenImage(next); });
     }
 
 createThumbnails();
-
+createFullscreenImage(0);

@@ -79,6 +79,7 @@ img {
     border: 4px solid lime;
     opacity: 0.3;
     transition: all 0.5s ease;
+    cursor: pointer;
 }
 
 .btn:hover {
@@ -96,32 +97,11 @@ img {
     padding: 20px;
 }
 
-/* @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-#fullscreen-container img {
-    animation-name: fadeIn;
-    animation-duration: 1s;
-} */
-
 @media only screen and (max-width: 800px) {
     main {
         display: block;
     }
-
     #fullscreen-container {
         margin-bottom: 15px;
     }
 }
-
-
-/* 
-#prevBtn {}
-#nextBtn {} */
