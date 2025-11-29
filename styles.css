@@ -22,9 +22,9 @@ main {
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     padding: 8% 2%;
     width: 100%;
-    /* limit width */
+    /* restrict width of gallery if required */
     /* max-width: 800px; */
-    /* center element on limited width */
+    /* center element on restricted width */
     /* margin: auto; */
 }
 
@@ -101,6 +101,7 @@ img {
     main {
         display: block;
     }
+
     #fullscreen-container {
         margin-bottom: 15px;
     }
