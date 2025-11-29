@@ -8,30 +8,24 @@ prevBtn.addEventListener("click", showPrev);
 nextBtn.addEventListener("click", showNext);
 let currentImg = 0;
 
-//STEP 1: store image data
-const imageData = [
+const imageData = [ // image data object
     {
-        imageName: "img-one",
         imageSrc: "./images/autumn-forest.jpg",
         imageAlt: "forest in autumn"
     },
     {
-        imageName: "img-two",
         imageSrc: "./images/forest-track.jpg",
         imageAlt: "misty woodland"
     },
     {
-        imageName: "img-three",
         imageSrc: "./images/mountain-lake.jpg",
         imageAlt: "mountain lake"
     },
     {
-        imageName: "img-four",
         imageSrc: "./images/sunset-lake.jpg",
         imageAlt: "lake at sunset"
     },
     {
-        imageName: "img-five",
         imageSrc: "./images/mountain-pass.jpg",
         imageAlt: "mountain pass"
     }
@@ -39,13 +33,11 @@ const imageData = [
 
 const objL = imageData.length;
 
-//STEP 2: create thumbnail images
-function createThumbnails() {
+function createThumbnails() { // create thumbs
     for (let i = 0; i < objL; i++) {
         const img = document.createElement("img");
         img.src = imageData[i].imageSrc;
         img.alt = imageData[i].imageAlt;
-        img.id = imageData[i].imageName;
         img.className = "ri";
         img.title = imageData[i].imageAlt;
         img.addEventListener("click", () => { createFullscreenImage(i); });
@@ -53,8 +45,7 @@ function createThumbnails() {
     }
 }
 
-//STEP 3: create fullscreen images
-function createFullscreenImage(i) {
+function createFullscreenImage(i) { // create full image
     fullScreenContainer.innerHTML = "";
     const fullImg = document.createElement("img");
     fullImg.src = imageData[i].imageSrc;

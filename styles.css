@@ -23,7 +23,7 @@ main {
     padding: 8% 2%;
     width: 100%;
     /* use 'max-width' to restrict gallery width if required */
-    /* use on any container */
+    /* can be used on main or with any container inside main */
     /* max-width: 800px; */
     /* center element with restricted width */
     /* margin: auto; */
