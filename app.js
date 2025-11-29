@@ -12,19 +12,29 @@ let currentImg = 0;
 const imageData = [
     {
         imageName: "img-one",
-        imageSrc: "./images/image-one.jpg",
-        imageAlt: "mountain lake"
+        imageSrc: "./images/autumn-forest.jpg",
+        imageAlt: "forest in autumn"
     },
     {
         imageName: "img-two",
-        imageSrc: "./images/image-two.jpg",
+        imageSrc: "./images/forest-track.jpg",
         imageAlt: "misty woodland"
     },
     {
         imageName: "img-three",
-        imageSrc: "./images/image-three.jpg",
-        imageAlt: "mountain pass",
+        imageSrc: "./images/mountain-lake.jpg",
+        imageAlt: "mountain lake"
     },
+        {
+        imageName: "img-four",
+        imageSrc: "./images/sunset-lake.jpg",
+        imageAlt: "lake at sunset"
+    },
+        {
+        imageName: "img-five",
+        imageSrc: "./images/mountain-pass.jpg",
+        imageAlt: "mountain pass"
+    }
 ];
 
 const objL = imageData.length;
@@ -56,19 +66,23 @@ function createFullscreenImage(i) {
 }
 
 function showPrev() {
+    console.log(currentImg);
     if (currentImg === 0) { // wrap to last image in object 
         currentImg = objL;
     }
     currentImg--;
     createFullscreenImage(currentImg);
+    console.log(currentImg);
 }
 
 function showNext() {
+    console.log(currentImg);
     currentImg++;
     if (currentImg === objL) { // wrap to first image in object
         currentImg = 0;
     }
     createFullscreenImage(currentImg);
+    console.log(currentImg);
 }
 
 createThumbnails();

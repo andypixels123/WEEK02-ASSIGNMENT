@@ -106,3 +106,17 @@ img {
         margin-bottom: 15px;
     }
 }
+
+@media only screen and (max-width: 480px) {
+    #thumbnail-container {
+        gap: 8px;
+    }
+
+    #fullscreen-container {
+        margin-bottom: 8px;
+    }
+
+    img {
+        border-radius: 8px;
+    }
+}

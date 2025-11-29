@@ -27,6 +27,6 @@ I used a css grid layout which was a bit problematic to code correctly, I acheiv
 
 REFERENCES
 --------------
-I used a book entitled 'Javascript & Ajax' Visual Quickstart Guide for ideas and inspiration concerning the round previous and next navigation buttons logic (showNext() and showPrev() functions).
+I used a book entitled 'Javascript & Ajax' Visual Quickstart Guide for ideas and inspiration concerning the showNext() and showPrev() functions. I modified their functions to suit my application.
 
 I also used W3 Schools / MDN websites for reference regarding css grid, aria attributes and information on keyboard events. I adapted a keyboard event sample code shown on the MDN website by adding a switch statement for different key presses.
