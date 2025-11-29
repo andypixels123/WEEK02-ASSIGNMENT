@@ -21,10 +21,12 @@ What went really well and what could have gone better?
 
 REFLECTION
 --------------------
-I believe I have completed all requirements. I have created a image gallery with wrap-around navigation in forwards and backwards directions as an addition to the brief. Also included are clickable thumbnails with event handlers attached. All images are responsive and can be viewed on both desktop and mobile devices. The main image is set to 100% width with a small margin surround to improve aesthetics. Thumbnails and forward/backward navigation buttons fall below the main image at screen widths of 800px width and smaller by utilising an @media query. All images have 'alt' tags included.
+I believe I have completed all requirements. I have created a image gallery with wrap-around navigation in forwards and backwards directions via css buttons and keyboard navigation. I made use of left and right arrow keys / 'n' and 'p' keys for next and previous image navigation. Also included are clickable thumbnails with event handlers attached. All images are responsive and can be viewed on both desktop and mobile devices. The main image is set to 100% width with a small margin surround to improve aesthetics. Thumbnails and forward/backward navigation buttons fall below the main image at screen widths of 800px width and smaller by utilising an @media query. All images have 'alt' tags included and I have included some aria attributes for screen reader access.
 
 I used a css grid layout which was a bit problematic to code correctly, I acheived this with some help from Manuel.
 
-I used a book entitled 'Javascript & Ajax' Visual Quickstart Guide for ideas and inspiration concerning the forwards and backwards navigation buttons logic which I created as an added extra to this assignment as it was not a requirement but improves functionality.
+REFERENCES
+--------------
+I used a book entitled 'Javascript & Ajax' Visual Quickstart Guide for ideas and inspiration concerning the round previous and next navigation buttons logic (showNext() and showPrev() functions).
 
-I also used W3 Schools / MDN websites for reference regarding css grid.
+I also used W3 Schools / MDN websites for reference regarding css grid, aria attributes and information on keyboard events. I adapted a keyboard event sample code shown on the MDN website by adding a switch statement for different key presses.

@@ -50,7 +50,9 @@ function createFullscreenImage(i) {
     fullImg.src = imageData[i].imageSrc;
     fullImg.alt = imageData[i].imageAlt;
     fullImg.className = "ri";
+    fullImg.ariaLabel = "alternating image";
     fullScreenContainer.appendChild(fullImg);
+    console.log(fullImg);
 }
 
 function showPrev() {
@@ -71,3 +73,22 @@ function showNext() {
 
 createThumbnails();
 createFullscreenImage(currentImg);
+
+// 37 ArrowLeft
+// 39 ArrowRight
+// keydown Event // key property
+
+document.addEventListener("keyup", (e) => {
+  if (!e.repeat) {
+    // console.log(e.key);
+    switch(e.key) {
+        case "ArrowLeft": showPrev()
+        break;
+        case "p": showPrev()
+        break;
+        case "ArrowRight": showNext()
+        break;
+        case "n": showNext();
+    }
+  }
+});

@@ -22,9 +22,9 @@ main {
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     padding: 8% 2%;
     width: 100%;
-    /* restrict width of gallery if required */
+    /* use 'max-width' to restrict gallery width if required */
     /* max-width: 800px; */
-    /* center element on restricted width */
+    /* center element with restricted width */
     /* margin: auto; */
 }
 
