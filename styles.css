@@ -23,6 +23,7 @@ main {
     padding: 8% 2%;
     width: 100%;
     /* use 'max-width' to restrict gallery width if required */
+    /* use on any container */
     /* max-width: 800px; */
     /* center element with restricted width */
     /* margin: auto; */
@@ -48,7 +49,6 @@ img {
     align-items: center;
     /* align-items: last baseline; */
     gap: 15px;
-
 }
 
 #thumbnail-container img {

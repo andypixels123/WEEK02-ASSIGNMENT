@@ -25,12 +25,12 @@ const imageData = [
         imageSrc: "./images/mountain-lake.jpg",
         imageAlt: "mountain lake"
     },
-        {
+    {
         imageName: "img-four",
         imageSrc: "./images/sunset-lake.jpg",
         imageAlt: "lake at sunset"
     },
-        {
+    {
         imageName: "img-five",
         imageSrc: "./images/mountain-pass.jpg",
         imageAlt: "mountain pass"
@@ -66,23 +66,19 @@ function createFullscreenImage(i) {
 }
 
 function showPrev() {
-    console.log(currentImg);
     if (currentImg === 0) { // wrap to last image in object 
         currentImg = objL;
     }
     currentImg--;
     createFullscreenImage(currentImg);
-    console.log(currentImg);
 }
 
 function showNext() {
-    console.log(currentImg);
     currentImg++;
     if (currentImg === objL) { // wrap to first image in object
         currentImg = 0;
     }
     createFullscreenImage(currentImg);
-    console.log(currentImg);
 }
 
 createThumbnails();
@@ -93,16 +89,16 @@ createFullscreenImage(currentImg);
 // keydown Event // key property
 
 document.addEventListener("keyup", (e) => {
-  if (!e.repeat) {
-    // console.log(e.key);
-    switch(e.key) {
-        case "ArrowLeft": showPrev()
-        break;
-        case "p": showPrev()
-        break;
-        case "ArrowRight": showNext()
-        break;
-        case "n": showNext();
+    if (!e.repeat) {
+        // console.log(e.key);
+        switch (e.key) { // match key pressed
+            case "ArrowLeft": showPrev()
+                break;
+            case "p": showPrev()
+                break;
+            case "ArrowRight": showNext()
+                break;
+            case "n": showNext();
+        }
     }
-  }
 });
