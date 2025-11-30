@@ -22,7 +22,7 @@ main {
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     width: 100vw;
     height: 100vh;
-    padding: 2vh;
+    padding: 2vh 2vw;
     /* use 'max-width' to restrict gallery width if required */
     /* can be used on main or with any container inside main */
     /* max-width: 800px; */
@@ -67,8 +67,8 @@ img {
 
 #fullscreen-container img {
     /* keep image aspect ratio and prevent stretch */
-    /* max-width:; */
-    /* max-height:; */
+    max-width: 1850px;
+    max-height: 1200px;
     margin: auto;
 }
 
@@ -131,8 +131,8 @@ img {
 
 @media only screen and (orientation: landscape) {
     #fullscreen-container img {
+        width: 96vw;
         height: 96vh;
-        width: auto;
     }
 }
 
