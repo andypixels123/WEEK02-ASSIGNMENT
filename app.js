@@ -71,15 +71,12 @@ function showNext() {
     createFullscreenImage(currentImg);
 }
 
-createThumbnails();
-createFullscreenImage(currentImg);
-
 // 37 ArrowLeft
 // 39 ArrowRight
 // keydown Event // key property
 
 document.addEventListener("keyup", (e) => {
-    // if (!e.repeat) { // for 'keydown' event behaviour
+    // if (!e.repeat) { // for 'keydown' event
     if (e) {
         // console.log(e.key);
         switch (e.key) { // match key pressed
@@ -103,3 +100,6 @@ document.addEventListener("keyup", (e) => {
         }
     }
 });
+
+createThumbnails();
+createFullscreenImage(currentImg);

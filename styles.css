@@ -22,7 +22,7 @@ main {
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     width: 100vw;
     height: 100vh;
-    padding: 2vh;    
+    padding: 2vh;
     /* use 'max-width' to restrict gallery width if required */
     /* can be used on main or with any container inside main */
     /* max-width: 800px; */
@@ -49,7 +49,6 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* align-items: last baseline; */
     gap: 15px;
 }
 
@@ -68,8 +67,8 @@ img {
 
 #fullscreen-container img {
     /* keep image aspect ratio and prevent stretch */
-    /* max-width: 1000px; */
-    /* max-height: 750px; */
+    /* max-width:; */
+    /* max-height:; */
     margin: auto;
 }
 
@@ -139,6 +138,7 @@ img {
 
 @media only screen and (orientation: portrait) {
     main {
+        /* remove grid */
         display: block;
     }
 }
