@@ -21,9 +21,9 @@ What went really well and what could have gone better?
 
 REFLECTION
 --------------------
-I believe I have completed all requirements. I have created a image gallery with wrap-around navigation in forwards and backwards directions via css buttons and keyboard navigation. I made use of left and right arrow keys / 'n' and 'p' keys for next and previous image navigation. Also included are clickable thumbnails with event handlers attached. All images are responsive and can be viewed on both desktop and mobile devices. The main image is set to 100% width with a small margin surround to improve aesthetics. Thumbnails and forward/backward navigation buttons fall below the main image at screen widths of 800px width and smaller by utilising an @media query. All images have 'alt' tags included and I have included some aria attributes for screen reader access.
+I believe I have completed most if not all requirements. I have created a image gallery with wrap-around navigation in forwards and backwards directions via css buttons and keyboard navigation. I made use of left and right arrow keys / 'n' and 'p' keys for next and previous image navigation and keys 1-5 to select specific images. Also included are clickable thumbnails with event handlers attached. All images are responsive and can be viewed on both desktop and mobile devices. The main image is set to fill a screen but retain its aspect ratio. I added a small margin surround to improve aesthetics. Thumbnails and forward/backward navigation buttons fall below the main image at screen widths of 800px width and smaller by utilising an @media query. I have added @media queries for device orientation also. All images have 'alt' tags included and I have included some aria attributes for screen reader access.
 
-I used a css grid layout which was a bit problematic to code correctly, I acheived this with some help from Manuel.
+I used a css grid layout which was a bit problematic to code correctly, I acheived this with some help from Manuel. I probably need more practice with grid and flexbox to become more familiar.
 
 REFERENCES
 --------------

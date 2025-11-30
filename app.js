@@ -53,7 +53,6 @@ function createFullscreenImage(i) { // create full image
     fullImg.className = "ri";
     fullImg.ariaLabel = "alternating image";
     fullScreenContainer.appendChild(fullImg);
-    console.log(fullImg);
 }
 
 function showPrev() {
@@ -80,16 +79,27 @@ createFullscreenImage(currentImg);
 // keydown Event // key property
 
 document.addEventListener("keyup", (e) => {
-    if (!e.repeat) {
+    // if (!e.repeat) { // for 'keydown' event behaviour
+    if (e) {
         // console.log(e.key);
         switch (e.key) { // match key pressed
-            case "ArrowLeft": showPrev()
+            case "ArrowLeft": showPrev();
                 break;
-            case "p": showPrev()
+            case "p": showPrev();
                 break;
-            case "ArrowRight": showNext()
+            case "ArrowRight": showNext();
                 break;
             case "n": showNext();
+                break;
+            case "1": currentImg = 0; createFullscreenImage(currentImg);
+                break;
+            case "2": currentImg = 1; createFullscreenImage(currentImg);
+                break;
+            case "3": currentImg = 2; createFullscreenImage(currentImg);
+                break;
+            case "4": currentImg = 3; createFullscreenImage(currentImg);
+                break;
+            case "5": currentImg = 4; createFullscreenImage(currentImg);
         }
     }
 });

@@ -20,8 +20,9 @@ main {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    padding: 8% 2%;
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
+    padding: 2vh;    
     /* use 'max-width' to restrict gallery width if required */
     /* can be used on main or with any container inside main */
     /* max-width: 800px; */
@@ -29,14 +30,15 @@ main {
     /* margin: auto; */
 }
 
+img {
+    display: block;
+    border-radius: 12px;
+}
+
 .ri {
     /* responsive image */
     width: 100%;
     height: auto;
-}
-
-img {
-    border-radius: 12px;
 }
 
 #thumbnail-container {
@@ -62,6 +64,13 @@ img {
     grid-row-end: 6;
     grid-column-start: 1;
     grid-column-end: 2;
+}
+
+#fullscreen-container img {
+    /* keep image aspect ratio and prevent stretch */
+    /* max-width: 1000px; */
+    /* max-height: 750px; */
+    margin: auto;
 }
 
 .btn {
@@ -98,12 +107,12 @@ img {
 }
 
 @media only screen and (max-width: 800px) {
-    main {
-        display: block;
-    }
-
     #fullscreen-container {
         margin-bottom: 15px;
+    }
+
+    #thumbnail-container img {
+        max-width: 100px;
     }
 }
 
@@ -118,5 +127,18 @@ img {
 
     img {
         border-radius: 8px;
+    }
+}
+
+@media only screen and (orientation: landscape) {
+    #fullscreen-container img {
+        height: 96vh;
+        width: auto;
+    }
+}
+
+@media only screen and (orientation: portrait) {
+    main {
+        display: block;
     }
 }
