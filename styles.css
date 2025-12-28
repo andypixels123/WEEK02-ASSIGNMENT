@@ -141,4 +141,8 @@ img {
         /* remove grid */
         display: block;
     }
+
+    #thumbnail-container {
+        width:100%;
+    }
 }
